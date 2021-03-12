@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--META TAGS-->
+    <meta charset="utf-8"/>
+    <!--BOOTSTARP CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>WeatherPy Dashboard</title>
+  </head>
+
+  <body>
+  <!-- Navigation -->
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Latitude</a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+          </ul>
+        </div>
+        </nav>
+    </div>
+
+    <!--JUMBOTRON-->
+    <section>    
+      <div class="jumbotron ">
+        <div class="container hero">
+          <h1 class="display-5">Weather Analysis Visualisation Dashboard</h1>
+          <p class="lead">The purpose of this project was to analyze how weather changes as you get closer to the equator.</br>
+              To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</br>
+              After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:</br>
+              Temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</br></br>
+              To see each visualization, you can choose each of them from the Plots dropdown button or click on the images below.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container visualization">
+        <h2>Visualizations</h2>
+        <div class="row">
+          <div class="col"><a href="temperature.html"><img src="images/max_temp.png" alt="Latitude vs. Max Temperature" width="230px" height="190px"></a></div>
+          <div class="col"><a href="humidity.html"><img src="images/humidity.png" alt="Latitude vs. Humidity" width="230px" height="190px"></a></div>
+          <div class="col"><a href="cloudiness.html"><img src="images/cloud.png" alt="Latitude vs. Cloudiness" hwidth="230px" height="190px"></a></div>
+          <div class="col"><a href="wind.html"><img src="images/wind.png" alt="Latitude vs. Wind Speed" width="230px" height="190px"></a></div>
+      </div>
+      </div>
+    <section> 
+  </body>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</html>

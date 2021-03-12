@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--META TAGS-->
+    <meta charset="utf-8" />
+
+    <!--BOOTSTARP CSS-->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>WeatherPy Dashboard</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><span class="latitude">Latitude</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Plots</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="temperature.html"
+                  >Max Temperature</a
+                >
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--JUMBOTRON-->
+    <section>    
+      <div class="jumbotron ">
+        <div class="container hero">
+          <h1 class="display-5">Comparison Visualisation Dashboard</h1>
+          <p class="lead">Below you can see all the visualisations and compare latitude vs wind speed, cloudiness, maximum temperature and humidity.</br>
+            To see each individual visualization, you can choose each of them from the Plots dropdown button or click on the images below.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Main Grid-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-sm-5 col-md-6">
+              <h2 class="text-center">Latitude vs. Max Temperature</h2>
+              <a href="temperature.html">
+                <img
+                  src="Images/max_temp.png"
+                  alt="Temp vs. Latitude"
+                  ,
+                  class="center compimage"
+                />
+              </a>
+            </div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+              <h2 class="text-center">Latitude vs. Humidity</h2>
+              <a href="humidity.html">
+                <img
+                  src="Images/humidity.png"
+                  alt="Humidity vs. Latitude"
+                  ,
+                  class="center compimage"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-5 col-lg-6">
+              <h2 class="text-center">Latitude vs. Cloudiness</h2>
+              <a href="cloudiness.html">
+                <img
+                  src="images/cloud.png"
+                  alt="Cloudiness vs. Latitude"
+                  ,
+                  class="center compimage"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+              <h2 class="text-center">Latitude vs. Wind Speed</h2>
+              <a href="wind.html">
+                <img
+                  src="Images/wind.png"
+                  alt="Wind Speed vs. Latitude"
+                  ,
+                  class="center compimage"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"
+  ></script>
+</html>
